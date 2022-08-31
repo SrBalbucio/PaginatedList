@@ -1,6 +1,5 @@
 package balbucio.paginatedlist;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -65,6 +64,7 @@ public class PaginatedList<T> {
      * Divide a lista em páginas
      */
     private void split(){
+        paginas.clear();
         if(list.size() > itensPerPage) {
             int pages = list.size() / itensPerPage;
             int position = 0;
