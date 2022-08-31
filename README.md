@@ -5,7 +5,33 @@ If you need to break a list into pages with specific amounts of items, this can 
 
 ## Importando para o seu projeto
 Se você usa maven então:
+```maven
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependency>
+	    <groupId>com.github.SrBalbucio</groupId>
+	    <artifactId>PaginatedList</artifactId>
+	    <version>Tag</version>
+	</dependency>
+```
 Se você usa gradle então:
+```gradle
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+	dependencies {
+	        implementation 'com.github.SrBalbucio:PaginatedList:Tag'
+	}
+```
 
 ## Criando um PaginatedList
 ```java
